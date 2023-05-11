@@ -26,7 +26,7 @@ Note: If your Ubuntu does not have ‘curl’, you can install it by running sud
 In this example, your terminal will be the client, while www.propitixhomes.com will be the server.
 
 See the response from the remote server in the below output. You can also see that the requests from the URL are being served by a computer with an IP address 160.153.133.153 on port 80. More on IP addresses and ports when we get to Networking related projects
-@@@@@
+![](https://github.com/beorel/CLIENT-SERVER-ARCHITECTURE-WITH-MYSQL/blob/main/images/Screenshot%202022-12-20%20at%2022.36.10.png)
 
 Another simple way to get a server’s IP address is to use a simple diagnostic tool like ‘ping’, it will also show round-trip time – time for packets to go to and back from the server, this tool uses ICMP protocol.
 #### Side Self Study
@@ -36,6 +36,24 @@ Another simple way to get a server’s IP address is to use a simple diagnostic 
 ## IMPLEMENT A CLIENT SERVER ARCHITECTURE USING MYSQL DATABASE MANAGEMENT SYSTEM (DBMS).
 ### TASK – Implement a Client-Server Architecture using MySQL Database Management System (DBMS).
 To demonstrate a basic client-server using MySQL Relational Database Management System (RDBMS), follow the below instructions
-1. Create and configure two Linux-based virtual servers (EC2 instances in AWS).
+**step 1.** Create and configure two Linux-based virtual servers (EC2 instances in AWS).
+
 Server A name - `mysql server`
+
 Server B name - `mysql client`
+
+![](https://github.com/beorel/CLIENT-SERVER-ARCHITECTURE-WITH-MYSQL/blob/main/images/Screenshot%20(310).png)
+
+connect your mysql_server
+
+then Update ubuntu
+```
+sudo apt update
+```
+Upgrade ubuntu
+```
+sudo apt upgrade
+```
+step 2 - On mysql server Linux Server, we will install MySQL Server software. sudo apt install mysql-server -y sudo systemctl start mysql.service
+sudo systemctl status mysql.service
+Finally, we will check the status by running sudo systemctl status mysql This is what the end result should look like 
